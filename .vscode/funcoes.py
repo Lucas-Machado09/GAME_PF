@@ -3,6 +3,7 @@ import random
 import math
 
 pygame.init()
+pygame.mixer.init()
 
 WIDTH = 550
 HEIGHT = 600
