@@ -52,3 +52,28 @@ X_MIN, X_MAX = 50, WIDTH - 50
 Y_MIN, Y_MAX = 355, HEIGHT - 50
 
 CONTORNO = (40, 40, 40)
+# ------------------------------------------------------------
+# OS 20 NÍVEIS DE DINO
+# ------------------------------------------------------------
+BASE = [
+    ("baby",       (pygame.image.load("imagens\dino_01.jpeg")),  0.8),
+    ("Velociraptor",  (pygame.image.load("imagens\dino_02.jpeg")), 0.9),
+    ("Tricerátops",   (pygame.image.load("imagens\dino_03.jpeg")), 1.0),
+    ("Estegossauro",  (pygame.image.load("imagens\dino_04.jpeg")),  1.1),
+    ("Braquiossauro", (pygame.image.load("imagens\dino_05.jpeg")),  1.1),
+    ("Espinossauro",  (pygame.image.load("imagens\dino_06.jpeg")),   1.2),
+    ("T-Rex",         (pygame.image.load("imagens\dino_07.jpeg")), 1.3),
+    ("baby épico",       (pygame.image.load("imagens\dino_08.jpeg")),  0.8),
+    ("Velociraptor épico",  (pygame.image.load("imagens\dino_09.jpeg")), 0.9),
+    ("Tricerátops épico",   (pygame.image.load("imagens\dino_10.jpeg")), 1.0),
+    ("Estegossauro épico",  (pygame.image.load("imagens\dino_11.jpeg")),  1.1),
+    ("Braquiossauro épico", (pygame.image.load("imagens\dino_12.jpeg")),  1.1),
+    ("Espinossauro épico",  (pygame.image.load("imagens\dino_13.jpeg")),   1.2),
+    ("T-Rex épico",         (pygame.image.load("imagens\dino_14.jpeg")), 1.3),
+    ("baby gold",       (pygame.image.load("imagens\dino_15.jpeg")),  0.8),
+    ("Velociraptor gold",  (pygame.image.load("imagens\dino_16.jpeg")), 0.9),
+    ("Tricerátops gold",   (pygame.image.load("imagens\dino_17.jpeg")), 1.0),
+    ("Estegossauro gold",  (pygame.image.load("imagens\dino_18.jpeg")),  1.1),
+    ("Espinossauro gold", (pygame.image.load("imagens\dino_19.jpeg")),  1.1),
+    ("T-Rex gold",  (pygame.image.load("imagens\dino_20.jpeg")),   1.2),
+]
