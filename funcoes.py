@@ -77,3 +77,16 @@ BASE = [
     ("Espinossauro gold", (pygame.image.load("imagens\dino_19.jpeg")),  1.1),
     ("T-Rex gold",  (pygame.image.load("imagens\dino_20.jpeg")),   1.2),
 ]
+def montar_info():
+    info = {}
+    for n in range(1, NIVEL_MAXIMO + 1):
+        nome, imagem, escala = BASE[n - 1]
+
+        info[n] = {
+            "nome": nome,
+            "imagem": imagem,
+            "escala": escala
+        }
+
+    return info
+INFO = montar_info()
