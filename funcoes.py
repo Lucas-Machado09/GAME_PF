@@ -1,21 +1,19 @@
-# ===== Inicialização =====
-# ----- Importa e inicia pacotes
 import pygame
 import random
 import math
 
 pygame.init()
 pygame.mixer.init()
+
 # ----- Gera tela principal
+
 WIDTH = 500
 HEIGHT = 400
 window = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('DinoEvolution!')
 
-# ----- Inicia assets
-# ------------------------------------------------------------
-# CONFIGURAÇÕES DO JOGO (dá pra mexer nos números pra mudar a dificuldade)
-# ------------------------------------------------------------
+# CONFIGURAÇÕES DO JOGO
+
 MAX_DINOS = 20          # máximo de dinos na tela ao mesmo tempo
 NIVEL_MAXIMO = 20       # nível final: 19 + 19 = 20 -> vitória!
 OVO_MIN, OVO_MAX = 7, 11        # a cada quantos segundos um dino solta um ovo
@@ -48,7 +46,7 @@ def compra_dino(n):
     lista_de_dinossauro[n] += 1
 
 # Limites da área onde os dinos andam (o chão da floresta) 
-X_MIN, X_MAX = 50, WIDTH - 50
-Y_MIN, Y_MAX = 355, HEIGHT - 50
+X_MIN, X_MAX = 0, WIDTH
+Y_MIN, Y_MAX = 490, 650
 
 CONTORNO = (40, 40, 40)
