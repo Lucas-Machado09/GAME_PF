@@ -28,8 +28,12 @@ QUAL_MAX = 12           # nível máximo de dino que vem nas caixas
 COOLDOWN_ROLETA = 40    # segundos entre giros da roleta
 lista_de_dinossauro=[0]*20
 
-#imagem
-image = pygame.image.load('assets/img/logo-madfox.png').convert() #LUCAS MUDAR
+#tela de fundo
+tela_de_fundo = pygame.image.load("imagens/WhatsApp Image 2026-11-16 at 10.41.21.jpeg")
+tela_de_fundo = pygame.transform.scale(tela_de_fundo, (WIDTH, HEIGHT))
+pygame.mixer.music.load("sons\dinosaur_extinction_old_classical_music_by_kris_klavenes_ending_soundtrack_05.02.2021.mp3")
+pygame.mixer.music.set_volume(0.4)
+
 # Quanto vale (em moedas) o ovo de um dino do nível n: dobra a cada nível
 def valor_ovo(n):
     return 2 ** (n - 1)
@@ -40,8 +44,8 @@ def preco_dino(n):
 def compra_dino(n):
     lista_de_dinossauro[n] += 1
 
-# Limites da área onde os dinos andam (o chão da floresta) LUCAS MUDAR
-X_MIN, X_MAX = 50, LARGURA - 50
-Y_MIN, Y_MAX = 355, ALTURA - 50
+# Limites da área onde os dinos andam (o chão da floresta) 
+X_MIN, X_MAX = 50, WIDTH - 50
+Y_MIN, Y_MAX = 355, HEIGHT - 50
 
 CONTORNO = (40, 40, 40)
