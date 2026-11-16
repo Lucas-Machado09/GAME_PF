@@ -50,9 +50,9 @@ X_MIN, X_MAX = 0, WIDTH
 Y_MIN, Y_MAX = 490, 650
 
 CONTORNO = (40, 40, 40)
-# ------------------------------------------------------------
+
 # OS 20 NÍVEIS DE DINO
-# ------------------------------------------------------------
+
 BASE = [
     ("baby",       (pygame.image.load("imagens\dino_01.jpeg")),  0.8),
     ("Velociraptor",  (pygame.image.load("imagens\dino_02.jpeg")), 0.9),
@@ -75,3 +75,12 @@ BASE = [
     ("Espinossauro gold", (pygame.image.load("imagens\dino_19.jpeg")),  1.1),
     ("T-Rex gold",  (pygame.image.load("imagens\dino_20.jpeg")),   1.2),
 ]
+def dinheiro(n):
+    n = float(n)
+    for qtd in ["", "k", "M", "B", "T"]:
+        if abs(n) < 1000 or qtd == "T":
+            if qtd == "":
+                return str(int(n))
+            return f"{n:.1f}{qtd}" if n < 100 else f"{int(n)}{qtd}"
+        n /= 1000
+
