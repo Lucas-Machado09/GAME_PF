@@ -16,7 +16,7 @@
 
 # # MAX_DINOS = 20          # máximo de dinos na tela ao mesmo tempo
 # # NIVEL_MAXIMO = 20       # nível final: 19 + 19 = 20 -> vitória!
-# # OVO_MIN, OVO_MAX = 7, 11        # a cada quantos segundos um dino solta um ovo
+# # OVO_MIN, OVO_MAX = 7, 11        # a cada quantos segundos um dino solta um ovopz
 # # MEDIA_OVO = (OVO_MIN + OVO_MAX) / 2
 # # VIDA_OVO = 12           # segundos que o ovo fica na tela antes de sumir
 # # MAX_OVOS = 40           # máximo de ovos na tela
@@ -1359,7 +1359,7 @@ def preco_dino(n, lista_de_dinossauro):  # Calcula o preco atual de compra de um
 def compra_dino(n, lista_de_dinossauro):  # Registra +1 na quantidade de dinossauros comprados daquele nivel.
     lista_de_dinossauro[n - 1] += 1
 
-<<<<<<< HEAD
+
 BASE = [
     ("baby",       (pygame.image.load("imagens\dino_01.jpeg")),  0.8),
     ("Velociraptor",  (pygame.image.load("imagens\dino_02.jpeg")), 0.9),
@@ -1396,7 +1396,6 @@ def montar_info():
     info = {}
     for n in range(1, NIVEL_MAXIMO + 1):
         nome, imagem, escala = BASE[n - 1]
-=======
 
 def dinheiro(n):  # Abrevia valores grandes de moedas usando sufixos k, M, B e T.
     if n >= 1000000000000:
@@ -1408,14 +1407,7 @@ def dinheiro(n):  # Abrevia valores grandes de moedas usando sufixos k, M, B e T
     elif n >= 1000:
         return str(int(n / 1000)) + "k"
     return str(int(n))
->>>>>>> 84a6067887d5f636722f58a839fa9fa6dfe9bd9b
 
-
-<<<<<<< HEAD
-    return info
-INFO = montar_info()
-
-=======
 def itens_do_jogo(itens):  # Converte um grupo de sprites do Pygame em uma lista comum.
     lista = []
     for item in itens:
@@ -2289,4 +2281,4 @@ def main():  # Inicializa o Pygame, cria a janela e roda o loop principal do jog
 
 if __name__ == "__main__":
     main()
->>>>>>> 84a6067887d5f636722f58a839fa9fa6dfe9bd9b
+

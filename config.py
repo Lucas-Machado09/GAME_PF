@@ -3,8 +3,8 @@ import math
 from os import path
 
 # ==================== CAMINHOS DAS PASTAS ====================
-IMG_DIR = path.join(path.dirname(_file_), "imagens")
-SND_DIR = path.join(path.dirname(_file_), "sons")
+IMG_DIR = path.join(path.dirname(__file__), "imagens")
+SND_DIR = path.join(path.dirname(__file__), "sons")
 
 # ==================== TELA E REGRAS DO JOGO ====================
 WIDTH = 800
