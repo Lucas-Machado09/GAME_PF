@@ -3,8 +3,8 @@ import math
 from os import path
 
 # ==================== CAMINHOS DAS PASTAS ====================
-IMG_DIR = path.join(path.dirname(_file_), "imagens")
-SND_DIR = path.join(path.dirname(_file_), "sons")
+IMG_DIR = path.join(path.dirname(__file__), "imagens")
+SND_DIR = path.join(path.dirname(__file__), "sons")
 
 # ==================== TELA E REGRAS DO JOGO ====================
 WIDTH = 800
@@ -29,7 +29,7 @@ X_MIN, X_MAX = 12, WIDTH - 12
 Y_MIN, Y_MAX = 310, HEIGHT - 60
 
 # ==================== ARQUIVOS DE IMAGEM E SOM ====================
-FUNDO = "fundo-floresta.jpeg"
+FUNDO = "WhatsApp Image 2026-11-16 at 10.41.21.jpeg"
 MUSICA = "dinosaur_extinction_old_classical_music_by_kris_klavenes_ending_soundtrack_05.02.2021.mp3"
 METEORO = "Meteoro.png"
 SOM_ENCAIXE = "encaixe.wav"
